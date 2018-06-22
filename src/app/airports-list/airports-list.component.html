@@ -1,0 +1,33 @@
+
+<form class="form-wrapper">
+<h1>Airports</h1>
+<!-- <input ng-model="searchText" placeholder="Search for..."> -->
+<!-- <input type="submit" value="go" id="submit"> -->
+<!-- <p class="s"><label>Searching</label><input name="search" id="search" type="search" ng-model="searchText"></p> -->
+</form>
+
+<div class="col-md-4 column" *ngFor="let airport of airports; let i = index">
+    <div class="flip">
+    <div class="card">
+        <img  ng-disabled="map" src="../assets/Airports_pics/{{airport.iata}}.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b><strong>{{airport.name}}</strong></b></h4>
+            <p>{{airport.iata}}</p>
+            <i (click)="toggle(i)" class="fa fa-plane" aria-hidden="true"></i>
+        </div>
+        <div class="face back" ng-model="map">
+            <app-map [latitude]="airport.lat" [longitude]="airport.lon"></app-map>
+            <!-- <button (click)="toggle(i)">back</button> -->
+
+            <button type="button" class="btn btn-warning" (click)="toggle(i)">
+                Hide the Map
+            </button>
+            &nbsp; &nbsp; 
+            <button type="button" class="btn btn-info"
+                    tooltip={{content}}
+                    triggers="click">
+                Departure?
+            </button>
+        </div>
+    </div>
+</div>

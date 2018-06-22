@@ -1,0 +1,101 @@
+[
+    {
+        "iata": "AMS",
+        "lon": "4.763385",
+        "iso": "NL",
+        "status": 1,
+        "name": "Amsterdam Airport Schiphol",
+        "continent": "EU",
+        "type": "airport",
+        "lat": "52.30907",
+        "size": "large"
+    },
+    {
+        "iata": "LBS",
+        "lon": "179.33766",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Labasa Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-16.466215",
+        "size": "medium"
+    },
+    {
+        "iata": "TVU",
+        "lon": "179.87416",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Matei Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-16.693056",
+        "size": "small"
+    },
+    {
+        "iata": "KXF",
+        "lon": "179.83333",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Koro Island Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-17.333332",
+        "size": "small"
+    },
+    {
+        "iata": "RTA",
+        "lon": "177.0711",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Rotuma Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-12.4825",
+        "size": "small"
+    },
+    {
+        "iata": "SVU",
+        "lon": "179.33913",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Savusavu Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-16.798828",
+        "size": "small"
+    },
+    {
+        "iata": "VAU",
+        "lon": "177.86667",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Vatukoula Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-17.5",
+        "size": "small"
+    },
+    {
+        "iata": "KAY",
+        "lon": "178.56612",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Wakaya Island Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-17.041111",
+        "size": "small"
+    },
+    {
+        "iata": "ONU",
+        "lon": "179.0",
+        "iso": "FJ",
+        "status": 1,
+        "name": "Ono-I-Lau Airport",
+        "continent": "OC",
+        "type": "airport",
+        "lat": "-16.333332",
+        "size": "small"
+    }
+]

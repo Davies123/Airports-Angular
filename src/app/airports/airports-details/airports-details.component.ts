@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IAirport } from '../../_models/airports';
+import { IAirport } from '../../_models/airport';
 import { environment } from '../../../environments/environment';
 
 @Component({

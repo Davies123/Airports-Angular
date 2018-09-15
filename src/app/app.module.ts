@@ -8,8 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { AirportsModule } from './airports/airports.module';
-import { PortsModule } from './ports/ports.module';
 import { SharedModule } from './shared.module';
 import { HomeComponent } from './home/home.component';
 
@@ -20,8 +18,6 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    PortsModule,
-    AirportsModule,
     SharedModule,
     BrowserModule,
     HttpClientModule,

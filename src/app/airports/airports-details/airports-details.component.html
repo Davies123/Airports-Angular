@@ -1,24 +1,17 @@
 
-<form class="form-wrapper">
-<h1>Airports</h1>
-<!-- <input ng-model="searchText" placeholder="Search for..."> -->
-<!-- <input type="submit" value="go" id="submit"> -->
-<!-- <p class="s"><label>Searching</label><input name="search" id="search" type="search" ng-model="searchText"></p> -->
-</form>
-
-<div class="col-md-4 column" *ngFor="let airport of airports; let i = index">
+<div  class="col-md-4 column">
     <div class="flip">
-    <div class="card">
+    <div class="card" id="{{airport.iata}}">
         <img  ng-disabled="map" src="../assets/Airports_pics/{{airport.iata}}.jpg" alt="Avatar" style="width:100%">
         <div class="container">
             <h4><b><strong>{{airport.name}}</strong></b></h4>
             <p>{{airport.iata}}</p>
-            <i (click)="toggle(i)" class="fa fa-plane" aria-hidden="true"></i>
+            <i (click)="toggle(airport.iata)" class="fa fa-plane" aria-hidden="true"></i>
         </div>
         <div class="face back" ng-model="map">
             <app-map [latitude]="airport.lat" [longitude]="airport.lon"></app-map>
 
-            <button type="button" class="btn btn-warning" (click)="toggle(i)">
+            <button type="button" class="btn btn-warning" (click)="toggle(airport.iata)">
                 Hide the Map
             </button>
             &nbsp; &nbsp; 

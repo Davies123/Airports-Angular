@@ -1,0 +1,11 @@
+
+<form class="form-wrapper">
+<h1>Airports</h1>
+<!-- <input ng-model="searchText" placeholder="Search for..."> -->
+<!-- <input type="submit" value="go" id="submit"> -->
+<!-- <p class="s"><label>Searching</label><input name="search" id="search" type="search" ng-model="searchText"></p> -->
+</form>
+
+<div *ngFor="let airport of airports; let i = index">
+    <app-airports-details [airport]="airport"></app-airports-details>
+</div>

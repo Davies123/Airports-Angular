@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { AirportsListComponent } from './airports-list/airports-list.component';
+import { AirportsListComponent } from './airports/airports-list/airports-list.component';
 import { MapComponent } from './map/map.component';
 
 export const routes: Routes = [

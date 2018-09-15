@@ -9,7 +9,7 @@ import { throwError as observableThrowError, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PortsService {
-  portsUrl = environment.airoportsJson;
+  portsUrl = environment.portsJson;
 
   constructor(private http: HttpClient) { }
 

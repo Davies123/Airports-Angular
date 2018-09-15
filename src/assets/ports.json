@@ -1,0 +1,31 @@
+[
+    {
+        "iata": "NLAMS",
+        "lon": "4.895167900000001",
+        "status": 1,
+        "name": "Amsterdam",
+        "continent": "EU",
+        "type": "port",
+        "lat": "52.3702157",
+        "size": "big"
+    },
+    {
+        "iata": "HKHKG",
+        "lon": "114.109497",
+        "status": 1,
+        "name": "Hong Kong",
+        "continent": "AS",
+        "type": "port",
+        "lat": "22.396428",
+        "size": "big"
+    },
+    {
+        "iata": "HNPCR",
+        "lon": "-87.92857769999999",
+        "status": 1,
+        "name": "Puerto Cortés",
+        "continent": "NA",
+        "type": "port",
+        "lat": "15.825072"
+    }
+]

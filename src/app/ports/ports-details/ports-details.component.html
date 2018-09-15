@@ -6,7 +6,7 @@
         <div class="container">
             <h4><b><strong>{{port.name}}</strong></b></h4>
             <p>{{port.iata}}</p>
-            <i (click)="toggle(port.iata)" class="fa fa-plane" aria-hidden="true"></i>
+            <i (click)="toggle(port.iata)" class="fa fa-ship" aria-hidden="true"></i>
         </div>
         <div class="face back" ng-model="map">
             <app-map [latitude]="port.lat" [longitude]="port.lon"></app-map>

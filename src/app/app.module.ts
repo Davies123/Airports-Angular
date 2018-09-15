@@ -11,12 +11,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { PortsListComponent } from './ports/ports-list/ports-list.component';
+import { PortsDetailsComponent } from './ports/ports-details/ports-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AirportsListComponent,
     AirportsDetailsComponent,
+    PortsListComponent,
+    PortsDetailsComponent,
     NavComponent,
     MapComponent
   ],

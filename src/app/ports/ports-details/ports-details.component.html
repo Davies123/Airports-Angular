@@ -1,0 +1,25 @@
+
+<div  class="col-md-4 column">
+    <div class="flip">
+    <div class="card" id="{{port.iata}}">
+        <img  ng-disabled="map" src="../assets/Ports_pics/{{port.iata}}.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b><strong>{{port.name}}</strong></b></h4>
+            <p>{{port.iata}}</p>
+            <i (click)="toggle(port.iata)" class="fa fa-plane" aria-hidden="true"></i>
+        </div>
+        <div class="face back" ng-model="map">
+            <app-map [latitude]="port.lat" [longitude]="port.lon"></app-map>
+
+            <button type="button" class="btn btn-warning" (click)="toggle(port.iata)">
+                Hide the Map
+            </button>
+            &nbsp; &nbsp; 
+            <button type="button" class="btn btn-info"
+                    tooltip={{content}}
+                    triggers="click">
+                Departure?
+            </button>
+        </div>
+    </div>
+</div>

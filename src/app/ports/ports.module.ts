@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PortsRouting } from './ports.routing';
+import { PortsRouting, portRoutingComponents } from './ports.routing';
 import { PortsListComponent } from './ports-list/ports-list.component';
 import { PortsDetailsComponent } from './ports-details/ports-details.component';
 import { SharedModule } from '../shared.module';
@@ -12,8 +12,9 @@ import { SharedModule } from '../shared.module';
         SharedModule
     ],
     declarations: [
-        PortsListComponent,
-        PortsDetailsComponent
+        portRoutingComponents       // Tip
+        // PortsListComponent,
+        // PortsDetailsComponent
     ]
 })
 export class PortsModule {

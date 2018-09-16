@@ -9,6 +9,12 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
+  // Tip
+  navRoutes = [
+    { linkName: 'Airports', url: '/airports/list' },
+    { linkName: 'Ports', url: '/ports/list' },
+  ];
+
   ngOnInit() {
   }
 

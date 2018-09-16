@@ -10,7 +10,7 @@ import { environment } from '../../../environments/environment';
 export class PortsDetailsComponent implements OnInit {
 
   @Input()
-  port: IPort
+  port: IPort;
 
   /*Departure Port button*/
   content = environment.departure;

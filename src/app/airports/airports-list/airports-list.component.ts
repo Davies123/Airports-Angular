@@ -10,9 +10,7 @@ export class AirportsListComponent implements OnInit {
   public airports = [];
   public searchText = '';
 
-  constructor(private airportsService: AirportsService) { 
-    console.log("yes?");
-  }
+  constructor(private airportsService: AirportsService) { }
 
   ngOnInit() {
     this.airportsService.getAirports()

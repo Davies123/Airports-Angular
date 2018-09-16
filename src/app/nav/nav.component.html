@@ -5,11 +5,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/airports/list"  href="#">Airports</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/ports/list" href="#">Ports</a>
+      <li *ngFor="let navR of navRoutes" class="nav-item">
+        <a class="nav-link" [routerLink]="navR.url" >{{navR.linkName}}</a>        <!-- Tip -->
       </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">

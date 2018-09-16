@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li *ngFor="let navR of navRoutes" class="nav-item">
-        <a class="nav-link" [routerLink]="navR.url" >{{navR.linkName}}</a>        <!-- Tip -->
+        <a class="nav-link" [routerLink]="navR.url" routerLinkActive="router-link-active" >{{navR.linkName}}</a>        <!-- Tip -->
       </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">

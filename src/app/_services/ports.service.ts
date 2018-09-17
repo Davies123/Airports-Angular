@@ -8,12 +8,12 @@ import { throwError as observableThrowError, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PortsService {
-  portsUrl = environment.portsJson;
+  portsUrl = environment.ports
 
   constructor(private http: HttpClient) { }
 
-  getPorts(): Observable<IPort[]> {
-    return this.http.get<IPort[]>(this.portsUrl);
+  getPorts(type: String): Observable<IPort[]> {
+    return this.http.get<IPort[]>(this.portsUrl + "." + type + ".json");
   }
 
   errorHandler(error: HttpErrorResponse) {

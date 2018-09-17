@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   airoportsJson: '../assets/airports.json',
-  portsJson: '../assets/ports.json',
+  ports: '../assets/ports',
   googleApiKey: 'AIzaSyA1HF9o6JG-cW5DjLUUsljb8CiEaBioWao',
 
   /*Buttons*/

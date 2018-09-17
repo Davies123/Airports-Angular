@@ -12,8 +12,9 @@ export class PortsResolver implements Resolve<Observable<IPort[]>> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     console.log(route, state);
-    return this.portsService.getPorts().pipe(
+    return this.portsService.getPorts(route.paramMap.get('type')).pipe(
         delay(5000)
       );
   }
+  
 }

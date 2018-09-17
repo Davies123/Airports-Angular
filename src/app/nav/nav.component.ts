@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
   // Tip
   navRoutes = [
     { linkName: 'Airports', url: '/airports/list' },
-    { linkName: 'Ports', url: '/ports/list' },
+    { linkName: 'Ports', url: '/ports/list/sea' },
   ];
 
   ngOnInit() {

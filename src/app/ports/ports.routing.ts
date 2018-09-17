@@ -7,7 +7,7 @@ import { PortsDetailsComponent } from './ports-details/ports-details.component';
 const routes: Routes = [
     { path: '', component: PortsDetailsComponent },
     {
-        path: 'list',
+        path: 'list/:type',
         component: PortsListComponent,
         resolve: {
             ports: PortsResolver

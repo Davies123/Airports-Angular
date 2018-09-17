@@ -14,6 +14,8 @@ export class PortsListComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    
+    // route get param
     // this.portsService.getPorts()
     //   .subscribe(jsonData => this.ports = jsonData);
 
